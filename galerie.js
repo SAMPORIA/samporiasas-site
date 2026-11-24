@@ -36,7 +36,7 @@
   var origine = null;
 
   function groupeDe(lien) {
-    var parent = lien.closest('article.projet, section.product, .hero') || document.body;
+    var parent = lien.closest('article.projet, section.product, .hero, main.pp') || document.body;
     return Array.prototype.slice.call(parent.querySelectorAll('a.zoom'));
   }
 

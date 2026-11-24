@@ -2,153 +2,110 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Courrier en images — Messagerie, agenda et contacts</title>
-<meta name="description" content="Courrier en images : boîte de réception, assistant Claude, rédaction, agenda, contacts et version téléphone. Une messagerie personnelle pour Windows et Android.">
-<style>
-  :root { color-scheme: light dark; --ink:#12131c; --muted:#565a6e; --bg:#f4f5fa; --card:#fff; --line:#e0e2ec; --accent:#3a4bdd; --soft:#e9ecfe; --claude:#7b5cfa; --claude-soft:#f0ebff; }
-  @media (prefers-color-scheme: dark) { :root { --ink:#f2f3f8; --muted:#a8abc0; --bg:#0e0f16; --card:#171823; --line:#2a2c40; --accent:#8b97ff; --soft:#242a5c; --claude:#b4a0ff; --claude-soft:#2b2352; } }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width:1040px; margin:0 auto; padding:48px 20px 64px; }
-  nav { font-size:15px; margin:0 0 28px; }
-  a { color:var(--accent); }
-  h1 { font-size:40px; line-height:1.15; margin:0 0 12px; letter-spacing:-.025em; }
-  h2 { font-size:26px; line-height:1.25; margin:0 0 8px; letter-spacing:-.015em; }
-  .lead { font-size:19px; color:var(--muted); margin:0 0 32px; max-width:46em; }
-  section { margin:0 0 64px; }
-  section > p { color:var(--muted); max-width:46em; margin:0 0 20px; }
-  figure { margin:0; }
-  figure a { display:block; border-radius:16px; overflow:hidden; border:1px solid var(--line); background:var(--card); }
-  figure img { display:block; width:100%; height:auto; }
-  figcaption { font-size:14px; color:var(--muted); margin:8px 4px 0; }
-  .duo { display:grid; gap:20px; grid-template-columns:repeat(2, minmax(0,1fr)); }
-  .phones { display:grid; gap:20px; grid-template-columns:repeat(4, minmax(0,1fr)); }
-  .phones figure a { border-radius:22px; }
-  .tag { display:inline-block; background:var(--claude-soft); color:var(--claude); font-weight:600; font-size:14px; padding:2px 12px; border-radius:99px; margin:0 0 10px; }
-  .liste { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px 20px; }
-  .card h3 { font-size:16px; margin:0 0 4px; }
-  .card p { margin:0; color:var(--muted); font-size:15px; }
-  .limites { color:var(--muted); padding-left:1.2em; max-width:46em; }
-  .limites li { margin:0 0 6px; }
-  .links a { display:inline-block; background:var(--soft); color:var(--accent); font-weight:600; text-decoration:none; padding:10px 18px; border-radius:99px; margin:0 8px 8px 0; }
-  footer { color:var(--muted); font-size:14px; margin-top:28px; }
-  @media (max-width:760px) {
-    h1 { font-size:32px; } h2 { font-size:22px; }
-    .duo { grid-template-columns:minmax(0,1fr); }
-    .phones { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:14px; padding-bottom:8px; }
-    .phones figure { flex:0 0 62%; scroll-snap-align:start; }
-  }
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Courrier en images — SAMPORIA</title>
+<meta name="description" content="Courrier en images : boîte de réception, assistant Claude, rédaction, agenda, contacts et version téléphone. Une messagerie personnelle pour Windows et Android.">
+<link rel="canonical" href="https://samporiasas.com/courrier/presentation.html">
+<meta name="theme-color" content="#0E1333">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="SAMPORIA">
+<meta property="og:title" content="Courrier en images — SAMPORIA">
+<meta property="og:description" content="Courrier en images : boîte de réception, assistant Claude, rédaction, agenda, contacts et version téléphone. Une messagerie personnelle pour Windows et Android.">
+<meta property="og:url" content="https://samporiasas.com/courrier/presentation.html">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<main>
-<nav><a href="./">← Courrier</a> · <a href="confidentialite.html">Politique de confidentialité</a> · <a href="conditions.html">Conditions d’utilisation</a></nav>
-
-<h1>Courrier en images</h1>
-<p class="lead">Toutes vos boîtes, un seul endroit calme. Mail, agenda et contacts réunis pour Windows et Android, avec un assistant Claude qui lit avec vous : il propose, vous décidez.</p>
-
-<section aria-labelledby="s-boite">
-  <figure>
-    <a href="captures/01-pc-boite-de-reception.jpg"><img src="captures/01-pc-boite-de-reception.jpg" width="1568" height="710" alt="Courrier sur ordinateur : boîte de réception de plusieurs comptes, message ouvert avec le résumé de Claude et barre de réponse"></a>
-    <figcaption>La boîte de réception de tous vos comptes, avec un résumé de Claude en tête de message. Captures réalisées avec des données fictives.</figcaption>
-  </figure>
-</section>
-
-<section aria-labelledby="s-claude">
-  <span class="tag">Assistant</span>
-  <h2 id="s-claude">Claude, votre assistant</h2>
-  <p>Résumer un message, proposer une réponse, trier la boîte : Claude aide, mais rien n’est envoyé sans votre accord. En mode « Toute la boîte », il cite les messages par leur numéro, et un clic ouvre le message.</p>
-  <div class="duo">
-    <figure>
-      <a href="captures/02-pc-claude-toute-la-boite.jpg"><img src="captures/02-pc-claude-toute-la-boite.jpg" width="1568" height="710" loading="lazy" alt="Courrier : le volet de l’assistant en mode « Toute la boîte », avec des actions rapides"></a>
-      <figcaption>Le volet Claude, sur un message ou sur toute la boîte.</figcaption>
-    </figure>
-    <figure>
-      <a href="captures/03-pc-redaction-fenetre.jpg"><img src="captures/03-pc-redaction-fenetre.jpg" width="1568" height="710" loading="lazy" alt="Courrier : rédaction d’une réponse en fenêtre flottante avec l’historique des échanges en chronologie"></a>
-      <figcaption>La rédaction en fenêtre flottante, avec l’historique des échanges en chronologie.</figcaption>
-    </figure>
+<header class="doc-head pp-head">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="../" aria-label="SAMPORIA, accueil"><img src="../img/logo-samporia.svg" alt="" width="26" height="44"><span>SAMPORIA</span></a>
+      <a class="btn btn-ghost" href="../#projets">← Tous les projets</a>
+    </div>
+    <div class="pp-intro">
+      <div class="chips"><span class="chip wip">En usage personnel</span></div>
+      <h1>Courrier</h1>
+      <p class="lead">Toutes vos boîtes mail, votre agenda et vos contacts au même endroit, pour Windows et Android. Un assistant Claude propose, vous décidez : rien n’est envoyé sans votre accord.</p>
+      
+      <ul class="pp-points"><li>Aucun serveur intermédiaire, aucune publicité, aucun suivi</li><li>Plusieurs comptes, un agenda avec invitations et liens de visio</li><li>Résumés et brouillons de réponse à valider</li><li>L’historique des échanges en chronologie</li></ul>
+      <div class="pp-cta">
+        <a class="btn btn-ghost" href="confidentialite.html">Politique de confidentialité</a>
+        <a class="btn btn-ghost" href="conditions.html">Conditions d’utilisation</a>
+      </div>
+    </div>
   </div>
-</section>
+</header>
 
-<section aria-labelledby="s-temps">
-  <h2 id="s-temps">Gagner du temps</h2>
-  <p>Clic droit sur un ou plusieurs messages, réponse rapide sous le message, fenêtre de rédaction qui laisse le message visible derrière.</p>
-  <figure>
-    <a href="captures/04-pc-menu-clic-droit.jpg"><img src="captures/04-pc-menu-clic-droit.jpg" width="1568" height="710" loading="lazy" alt="Courrier : menu du clic droit sur un message (répondre, transférer, archiver, supprimer)"></a>
-    <figcaption>Le menu du clic droit sur un message.</figcaption>
-  </figure>
-</section>
+<main class="pp">
+  <div class="wrap">
+    <div class="pp-hero-fig"><figure class="pp-fig"><a class="zoom" href="captures/01-pc-boite-de-reception.jpg" aria-label="Agrandir la capture : Courrier sur ordinateur : boîte de réception de plusieurs comptes, message ouvert avec le résumé de Claude et barre de réponse"><img src="captures/01-pc-boite-de-reception.jpg" width="1568" height="710" alt="Courrier sur ordinateur : boîte de réception de plusieurs comptes, message ouvert avec le résumé de Claude et barre de réponse"></a></figure></div>
 
-<section aria-labelledby="s-agenda">
-  <h2 id="s-agenda">Un agenda qui se pilote à la souris et au doigt</h2>
-  <p>Un clic ou un glissé pour choisir la plage, des invités, un lien de visio. Sur PC, l’agenda est celui de Google Agenda ; sur Android, celui du téléphone.</p>
-  <div class="duo">
-    <figure>
-      <a href="captures/05-pc-agenda-semaine.jpg"><img src="captures/05-pc-agenda-semaine.jpg" width="1568" height="710" loading="lazy" alt="Courrier : agenda en vue semaine"></a>
-      <figcaption>L’agenda de la semaine.</figcaption>
-    </figure>
-    <figure>
-      <a href="captures/06-pc-nouvel-evenement.jpg"><img src="captures/06-pc-nouvel-evenement.jpg" width="1568" height="710" loading="lazy" alt="Courrier : fenêtre « Nouvel événement » avec lien de visio et invités"></a>
-      <figcaption>Un nouvel événement, avec lien de visio et invités.</figcaption>
-    </figure>
+  <section class="pp-sec" aria-labelledby="s-assistant">
+    <h2 id="s-assistant">Claude, votre assistant</h2>
+    <p>Résumer un message, proposer une réponse, trier la boîte : Claude aide, mais rien n’est envoyé sans votre accord. En mode « Toute la boîte », il cite les messages par leur numéro, et un clic ouvre le message.</p>
+    <div class="pp-figs duo"><figure class="pp-fig"><a class="zoom" href="captures/02-pc-claude-toute-la-boite.jpg" aria-label="Agrandir la capture : Courrier : le volet de l’assistant en mode « Toute la boîte », avec des actions rapides"><img src="captures/02-pc-claude-toute-la-boite.jpg" width="1568" height="710" loading="lazy" alt="Courrier : le volet de l’assistant en mode « Toute la boîte », avec des actions rapides"></a></figure>
+      <figure class="pp-fig"><a class="zoom" href="captures/03-pc-redaction-fenetre.jpg" aria-label="Agrandir la capture : Courrier : rédaction d’une réponse en fenêtre flottante avec l’historique des échanges en chronologie"><img src="captures/03-pc-redaction-fenetre.jpg" width="1568" height="710" loading="lazy" alt="Courrier : rédaction d’une réponse en fenêtre flottante avec l’historique des échanges en chronologie"></a></figure></div>
+  </section>
+
+  <section class="pp-sec" aria-labelledby="s-temps">
+    <h2 id="s-temps">Gagner du temps</h2>
+    <p>Clic droit sur un ou plusieurs messages, réponse rapide sous le message, fenêtre de rédaction qui laisse le message visible derrière.</p>
+    <div class="pp-figs"><figure class="pp-fig"><a class="zoom" href="captures/04-pc-menu-clic-droit.jpg" aria-label="Agrandir la capture : Courrier : menu du clic droit sur un message (répondre, transférer, archiver, supprimer)"><img src="captures/04-pc-menu-clic-droit.jpg" width="1568" height="710" loading="lazy" alt="Courrier : menu du clic droit sur un message (répondre, transférer, archiver, supprimer)"></a></figure></div>
+  </section>
+
+  <section class="pp-sec" aria-labelledby="s-agenda">
+    <h2 id="s-agenda">Un agenda qui se pilote à la souris et au doigt</h2>
+    <p>Un clic ou un glissé pour choisir la plage, des invités, un lien de visio. Sur PC, l’agenda est celui de Google Agenda ; sur Android, celui du téléphone.</p>
+    <div class="pp-figs duo"><figure class="pp-fig"><a class="zoom" href="captures/05-pc-agenda-semaine.jpg" aria-label="Agrandir la capture : Courrier : agenda en vue semaine"><img src="captures/05-pc-agenda-semaine.jpg" width="1568" height="710" loading="lazy" alt="Courrier : agenda en vue semaine"></a></figure>
+      <figure class="pp-fig"><a class="zoom" href="captures/06-pc-nouvel-evenement.jpg" aria-label="Agrandir la capture : Courrier : fenêtre « Nouvel événement » avec lien de visio et invités"><img src="captures/06-pc-nouvel-evenement.jpg" width="1568" height="710" loading="lazy" alt="Courrier : fenêtre « Nouvel événement » avec lien de visio et invités"></a></figure></div>
+  </section>
+
+  <section class="pp-sec" aria-labelledby="s-contacts">
+    <h2 id="s-contacts">Vos contacts, sans les modifier</h2>
+    <p>Fiche du contact, derniers échanges, bouton « Écrire ». Sur PC, les contacts Google sont en lecture seule : Courrier ne les modifie jamais.</p>
+    <div class="pp-figs"><figure class="pp-fig"><a class="zoom" href="captures/07-pc-contacts.jpg" aria-label="Agrandir la capture : Courrier : fiche d’un contact et derniers échanges"><img src="captures/07-pc-contacts.jpg" width="1568" height="710" loading="lazy" alt="Courrier : fiche d’un contact et derniers échanges"></a></figure></div>
+  </section>
+
+  <section class="pp-sec" aria-labelledby="s-sync">
+    <h2 id="s-sync">Vous choisissez ce qui se synchronise</h2>
+    <p>Contacts et agendas affichés, copie locale, images distantes bloquées par défaut : les réglages de confidentialité sont à portée de main. Aucun serveur Courrier ne se place entre votre appareil et votre fournisseur de messagerie.</p>
+    <div class="pp-figs"><figure class="pp-fig"><a class="zoom" href="captures/08-pc-synchronisation.jpg" aria-label="Agrandir la capture : Courrier : réglages de synchronisation, choix des sources de contacts et d’agendas"><img src="captures/08-pc-synchronisation.jpg" width="1568" height="710" loading="lazy" alt="Courrier : réglages de synchronisation, choix des sources de contacts et d’agendas"></a></figure></div>
+  </section>
+
+  <section class="pp-sec" aria-labelledby="s-mobile">
+    <h2 id="s-mobile">Sur téléphone comme sur ordinateur</h2>
+    <p>Les mêmes écrans et le même design sur Android : liste des messages, dossiers, lecture avec pièces jointes, agenda du jour.</p>
+    <div class="phones phones-s phones-4"><figure class="shot"><a class="zoom" href="captures/09-mobile-boite-de-reception.jpg" aria-label="Agrandir la capture : Courrier sur téléphone : liste des messages, filtres, bouton « Écrire » et barre d’onglets"><img src="captures/09-mobile-boite-de-reception.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : liste des messages, filtres, bouton « Écrire » et barre d’onglets"></a></figure>
+      <figure class="shot"><a class="zoom" href="captures/10-mobile-feuille-dossiers.jpg" aria-label="Agrandir la capture : Courrier sur téléphone : feuille des dossiers"><img src="captures/10-mobile-feuille-dossiers.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : feuille des dossiers"></a></figure>
+      <figure class="shot"><a class="zoom" href="captures/11-mobile-message.jpg" aria-label="Agrandir la capture : Courrier sur téléphone : message avec pièce jointe et barre de réponse"><img src="captures/11-mobile-message.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : message avec pièce jointe et barre de réponse"></a></figure>
+      <figure class="shot"><a class="zoom" href="captures/12-mobile-agenda-jour.jpg" aria-label="Agrandir la capture : Courrier sur téléphone : agenda en vue jour"><img src="captures/12-mobile-agenda-jour.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : agenda en vue jour"></a></figure></div>
+  </section>
+
+  <section class="pp-sec pp-savoir" aria-labelledby="s-savoir">
+    <h2 id="s-savoir">Ce qu’il faut savoir</h2>
+    <ul><li>Courrier est une application personnelle, pour Windows et Android. Elle n’est pas publiée dans les magasins d’applications.</li><li>Sur PC, la connexion à Google Agenda et aux contacts Google n’est pas encore validée par Google : un avertissement « application non vérifiée » s’affiche à la connexion.</li><li>Le lien de réunion Teams ne se crée pas automatiquement ; Google Meet, oui, sur PC avec Google Agenda.</li><li>Claude nécessite une clé API ou Claude Code ; la consommation est comptée dans l’application.</li><li>Les captures montrent des données fictives.</li></ul>
+  </section>
+
+    <nav class="pp-autres" aria-label="Autres projets">
+      <h2>Autres projets</h2>
+      <ul>
+          <li><a href="../oasis/">Oasis des Possibles</a></li>
+          <li><a href="../malaoui/">Malaoui</a></li>
+          <li><a href="../pdf-me/">PDF ME</a></li>
+      </ul>
+    </nav>
   </div>
-</section>
-
-<section aria-labelledby="s-contacts">
-  <h2 id="s-contacts">Vos contacts, sans les modifier</h2>
-  <p>Fiche du contact, derniers échanges, bouton « Écrire ». Sur PC, les contacts Google sont en lecture seule : Courrier ne les modifie jamais.</p>
-  <figure>
-    <a href="captures/07-pc-contacts.jpg"><img src="captures/07-pc-contacts.jpg" width="1568" height="710" loading="lazy" alt="Courrier : fiche d’un contact et derniers échanges"></a>
-    <figcaption>Une fiche contact et les derniers échanges.</figcaption>
-  </figure>
-</section>
-
-<section aria-labelledby="s-sync">
-  <h2 id="s-sync">Vous choisissez ce qui se synchronise</h2>
-  <p>Contacts et agendas affichés, copie locale, images distantes bloquées par défaut : les réglages de confidentialité sont à portée de main. Aucun serveur Courrier ne se place entre votre appareil et votre fournisseur de messagerie.</p>
-  <figure>
-    <a href="captures/08-pc-synchronisation.jpg"><img src="captures/08-pc-synchronisation.jpg" width="1568" height="710" loading="lazy" alt="Courrier : réglages de synchronisation, choix des sources de contacts et d’agendas"></a>
-    <figcaption>Réglages › Synchronisation.</figcaption>
-  </figure>
-</section>
-
-<section aria-labelledby="s-mobile">
-  <h2 id="s-mobile">Sur téléphone comme sur ordinateur</h2>
-  <p>Les mêmes écrans et le même design sur Android : liste des messages, dossiers, lecture avec pièces jointes, agenda du jour.</p>
-  <div class="phones">
-    <figure>
-      <a href="captures/09-mobile-boite-de-reception.jpg"><img src="captures/09-mobile-boite-de-reception.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : liste des messages, filtres, bouton « Écrire » et barre d’onglets"></a>
-      <figcaption>La boîte de réception.</figcaption>
-    </figure>
-    <figure>
-      <a href="captures/10-mobile-feuille-dossiers.jpg"><img src="captures/10-mobile-feuille-dossiers.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : feuille des dossiers"></a>
-      <figcaption>Les dossiers.</figcaption>
-    </figure>
-    <figure>
-      <a href="captures/11-mobile-message.jpg"><img src="captures/11-mobile-message.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : message avec pièce jointe et barre de réponse"></a>
-      <figcaption>Un message avec pièce jointe.</figcaption>
-    </figure>
-    <figure>
-      <a href="captures/12-mobile-agenda-jour.jpg"><img src="captures/12-mobile-agenda-jour.jpg" width="469" height="1015" loading="lazy" alt="Courrier sur téléphone : agenda en vue jour"></a>
-      <figcaption>L’agenda du jour.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section aria-labelledby="s-confiance">
-  <h2 id="s-confiance">Ce qu’il faut savoir</h2>
-  <ul class="limites">
-    <li>Courrier est une application personnelle, pour Windows et Android. Elle n’est pas publiée dans les magasins d’applications.</li>
-    <li>Sur PC, la connexion à Google Agenda et aux contacts Google n’est pas encore validée par Google : un avertissement « application non vérifiée » s’affiche à la connexion.</li>
-    <li>Le lien de réunion Teams ne se crée pas automatiquement ; Google Meet, oui, sur PC avec Google Agenda.</li>
-    <li>Claude nécessite une clé API ou Claude Code ; la consommation est comptée dans l’application.</li>
-  </ul>
-</section>
-
-<p class="links"><a href="confidentialite.html">Politique de confidentialité</a><a href="conditions.html">Conditions d’utilisation</a><a href="./">Présentation</a></p>
-<footer>Courrier est une application personnelle, développée par Samporia SAS — <a href="mailto:contact@samporiasas.com">contact@samporiasas.com</a>.</footer>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="legal">Courrier est une application personnelle, développée par SAMPORIA SAS. — © 2026 SAMPORIA SAS — <a href="../mentions-legales.html">Mentions légales</a> — <a href="../confidentialite.html">Confidentialité</a> — <a href="mailto:contact@samporiasas.com">contact@samporiasas.com</a> — <a href="../">Retour à l’accueil</a></p>
+  </div>
+</footer>
+<script src="../galerie.js" defer></script>
 </body>
 </html>

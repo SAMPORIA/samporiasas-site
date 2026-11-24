@@ -348,3 +348,50 @@ dialog.lb.plein .lb-img{max-width:none;max-height:none;margin:0 auto;cursor:zoom
   .lb-scene{gap:4px;padding:0 4px}
   .lb-boutons button{padding:0 14px}
 }
+
+/* ============================================================
+   PAGES DE PRÉSENTATION DES PROJETS (une page par application ou site)
+   Générées par outils/generer-projets.mjs
+   ============================================================ */
+.pp-head{padding-bottom:84px}
+.pp-intro{padding-top:20px;max-width:50rem}
+.pp-intro .chips{margin-bottom:18px}
+.pp-intro .chip{background:rgba(255,255,255,.14);color:#fff}
+.pp-intro h1{display:flex;align-items:center;gap:14px;font-size:clamp(2.3rem,1.4rem + 3.4vw,3.8rem);color:#fff;margin-bottom:16px}
+.pp-intro .lead{color:var(--on-ink-soft);font-size:1.15rem;max-width:44rem}
+.pp-intro .tarif{background:rgba(255,255,255,.14);color:#fff!important;margin-top:20px!important}
+.pp-points{display:grid;gap:8px;margin-top:22px}
+.pp-points li{position:relative;padding-left:22px;color:var(--on-ink-soft);font-size:1rem}
+.pp-points li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.pp-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.pp-hero-fig{position:relative;margin-top:-56px}
+.pp-fig{margin:0;padding:10px;border-radius:var(--radius);background:var(--tint)}
+.pp-hero-fig .pp-fig{box-shadow:var(--shadow)}
+.pp-fig .zoom{border-radius:10px}
+.pp-fig img{width:100%;height:auto;border-radius:10px;box-shadow:0 0 0 1px rgba(14,19,51,.1)}
+.pp-sec{margin-top:76px}
+.pp-sec h2{font-size:clamp(1.5rem,1.1rem + 1.4vw,2.1rem);margin-bottom:10px}
+.pp-sec>p{color:var(--muted);max-width:46rem;margin-bottom:26px}
+.pp-figs.duo{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){.pp-figs.duo{grid-template-columns:minmax(0,1fr)}}
+.pp-sec .phones{margin-top:0}
+.pp-savoir ul{display:grid;gap:10px;max-width:46rem}
+.pp-savoir li{position:relative;padding-left:22px;color:var(--muted)}
+.pp-savoir li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--link)}
+.pp-autres{margin-top:76px;padding-top:30px;border-top:1px solid var(--line)}
+.pp-autres h2{font:700 .8rem/1.3 var(--font-body);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.pp-autres ul{display:flex;flex-wrap:wrap;gap:10px}
+.pp-autres a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:var(--tint);color:var(--link);font-weight:700;text-decoration:none}
+.pp-autres a:hover{text-decoration:underline}
+.pp ~ .foot{margin-top:72px}
+
+/* ----- Accueil : un bloc par projet, avec un lien vers sa page ----- */
+.pcartes{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.pcarte{display:flex;flex-direction:column;min-width:0;background:var(--card);border-radius:var(--radius);padding:22px 22px 26px}
+.pcarte-visuel{display:block;border-radius:14px;overflow:hidden;background:var(--tint);padding:10px;margin-bottom:22px}
+.pcarte-visuel img{width:100%;height:auto;border-radius:8px;box-shadow:0 0 0 1px rgba(14,19,51,.1)}
+.pcarte h3{font-size:clamp(1.5rem,1.1rem + 1.3vw,2rem)}
+.pcarte p{margin-top:12px;color:var(--muted);font-size:1.03rem}
+.pcarte .mini-list{margin-top:16px}
+.pcarte .pcarte-lien{margin-top:auto;padding-top:22px}
+.pcarte .tarif{align-self:flex-start}
