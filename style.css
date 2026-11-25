@@ -395,3 +395,6 @@ dialog.lb.plein .lb-img{max-width:none;max-height:none;margin:0 auto;cursor:zoom
 .pcarte .mini-list{margin-top:16px}
 .pcarte .pcarte-lien{margin-top:auto;padding-top:22px}
 .pcarte .tarif{align-self:flex-start}
+
+/* une seule capture de téléphone : centrée à toutes les largeurs */
+.phones .shot:only-child{margin-inline:auto}
